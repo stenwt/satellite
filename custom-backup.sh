@@ -23,7 +23,7 @@ set -o nounset                              # Treat unset variables as an error
 BACKUPDIR=/var/satellite/.backup/backup-$(date --iso)
 TARGET=SOMEHOSTNAME
 
-RSYNC="/etc/pki/spacewalk/ /etc/sysconfig/rhn/ /etc/rhn/ /etc/tnsnames.ora /etc/xinetd.d/tftp /var/www/html/pub/ /var/satellite/ /root/.gnupg/ /root/ssl-build/ /etc/dhcp.conf /etc/httpd/ /var/lib/tftpboot/ /var/lib/cobbler/ /var/lib/rhn/kickstarts/ /var/www/cobbler/ /var/lib/nocpulse/"
+RSYNC="/etc/pki/spacewalk/ /etc/sysconfig/rhn/ /etc/rhn/ /etc/tnsnames.ora /etc/xinetd.d/tftp /var/www/html/pub/ /var/satellite/ /root/.gnupg/ /root/ssl-build/ /etc/dhcp.conf /etc/httpd/ /var/lib/tftpboot/ /var/lib/cobbler/ /var/lib/rhn/kickstarts/ /etc/cobbler/settings /etc/jabberd/ /var/www/cobbler/ /var/lib/nocpulse/"
 
 function log {
   STAMP=$(date +"%Y-%m-%d %H:%M:%S")
